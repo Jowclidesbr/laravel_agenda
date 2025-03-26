@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -13,7 +14,7 @@
                         </div>
 
                         <div class="col-md-2">
-                            <a href="{{ route('contatos.index') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">Welcome Page</a>
+                            <a href="{{ url('/') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">Welcome Page</a>
                         </div>
 
 
