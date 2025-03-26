@@ -9,15 +9,11 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-2">
-                            <a href="{{ route('contatos.index') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">App Contato</a>
+                            <a href="{{ route('contatos.index') }}" class="btn btn-success btn-lg btn-block btn-sm mb-3">App Contato</a>
                         </div>
 
                         <div class="col-md-2">
-                            <a href="{{ route('contatos.index') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">APP02</a>
-                        </div>
-
-                        <div class="col-md-2    ">
-                            <a href="{{ route('contatos.index') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">APP03</a>
+                            <a href="{{ route('contatos.index') }}" class="btn btn-primary btn-lg btn-block btn-sm mb-3">Welcome Page</a>
                         </div>
 
 
