@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Contatos;
 use Illuminate\Auth\Events\Validated;
 
+
 class ContatosController extends Controller
 {
     /**
@@ -15,7 +16,7 @@ class ContatosController extends Controller
     {
         //
 
-        $contatos = Contatos::get();
+        $contatos = Contatos::paginate(5);
 
         return view('contatos.index', compact('contatos'));
     }

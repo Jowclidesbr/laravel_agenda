@@ -33,19 +33,19 @@
               </tr>
             </thead>
             <tbody>
-                    @foreach($contatos as $contatos)
+                    @foreach($contatos as $contatos_infos)
 
                         <tr>
-                            <th scope="row"> {{ $contatos->id }} </th>
-                            <td>{{ $contatos->nome }} </td>
-                            <td>{{ $contatos->email }} </td>
-                            <td> {{ $contatos->telefone_cel }}  </td>
+                            <th scope="row"> {{ $contatos_infos->id }} </th>
+                            <td>{{ $contatos_infos->nome }} </td>
+                            <td>{{ $contatos_infos->email }} </td>
+                            <td> {{ $contatos_infos->telefone_cel }}  </td>
                             <td>
 
 
-                                <form action="{{ route('contatos.destroy', $contatos->id) }}" method="POST">
-                                    <a href="{{ route('contatos.show', $contatos->id) }}" class="btn btn-primary btn-sm"> <i class="fa fa-eye"> </i> &nbsp;View </a>
-                                    <a href="{{ route('contatos.edit', $contatos->id) }}" class="btn btn-info btn-sm"><i class="fa fa-pencil"> </i> &nbsp; Edit </a>
+                                <form action="{{ route('contatos.destroy', $contatos_infos->id) }}" method="POST">
+                                    <a href="{{ route('contatos.show', $contatos_infos->id) }}" class="btn btn-primary btn-sm"> <i class="fa fa-eye"> </i> &nbsp;View </a>
+                                    <a href="{{ route('contatos.edit', $contatos_infos->id) }}" class="btn btn-info btn-sm"><i class="fa fa-pencil"> </i> &nbsp; Edit </a>
                                     @csrf
                                         @method('DELETE')
 
@@ -62,6 +62,7 @@
                     @endforeach
             </tbody>
           </table>
+          {{ $contatos->links() }}
     </div>
 @endsection
 
